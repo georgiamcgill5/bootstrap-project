@@ -1,0 +1,94 @@
+body {
+  padding-top: 5rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.lead {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.col-lg-4 {
+    font-size: 12px;
+}
+
+.col-md-4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border-right: white 10px solid;
+    padding:20px;
+    margin-bottom:50px;
+}
+
+.col-md-4:last-child {
+    border-right: 0;
+}
+
+.lead-narrow {
+    max-width: 40rem;
+}
+
+.card {
+    border: 1px #999 solid;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+img {
+    margin: 15px;
+}
+
+.centered-card {
+    text-align: center;
+}
+
+*/
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+@media screen and (max-width: 576px) {
+   .card {
+/*   background-color: tomato;*/
+   max-width: 400px;
+   margin: 0 auto;
+        }
+}
+
+ul {
+    list-style-type: none;
+}
+
+caption {
+    width: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1, h3 {
+    color: #8080ff;
+}
+
+.float {
+    float: right;
+}
