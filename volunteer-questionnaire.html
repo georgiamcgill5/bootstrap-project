@@ -86,39 +86,89 @@
     <main role="main">
         
         <div class="starter-template container lead-narrow">
-        <h1>Thank-you!</h1>
-        <p class="lead">You will receive an email if we need any more information from you. We thank you for your help towards saving a dog's life. <br> See below for other ways to help us out.</p>
+        <h1>Become a Volunteer</h1>
+        <p class="lead">We rely quite heavily on willing volunteers to help keep this business running smoothly. We have a variety of different fields needing volunteers and we are always looking for new and confident individuals to help us out. The work that our volunteers do does not go unnoticed. We have a 3-monthly dinner paid for by senior management to celebrate the hard work our volunteers do.</p>
         </div>
-        
-        <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Volunteer</h3>
-        <p>We rely quite heavily on willing volunteers to help keep this business running smoothly. We have a variety of different fields needing volunteers and we are always looking for new and confident individuals to help us out. </p>
-        <p><a class="btn btn-secondary" href="volunteer.html" role="button">Volunteer Now &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h3>Donate</h3>
-        <p>We are a non-profit business, which means all funds from dog adoptions and all donations go towards new equipment, dog food and toys, and petrol for transport to rescue abandoned and stray dogs. Your donation could help save a dogs life. </p>
-        <p><a class="btn btn-secondary" href="donate.html" role="button">Donate Now &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h3>Adopt</h3>
-        <p>Adopting a dog today can mean happiness for you, your family and your new dog. By adopting through APS, you are not only saving one dogs life, but also contibuting to the saving of many other dogs out there that are yet to be rescued.</p>
-        <p><a class="btn btn-secondary" href="adopt.html" role="button">Adopt Now &raquo;</a></p>
-      </div>
-    </div>
+          
+    <div class="col-md-8 order-md-1 container">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="example@example.com" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your email is required.
+            </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="0276338421">
+          <div class="invalid-feedback">
+            Your phone number is required.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="confident">How confident are you around dogs?</label>
+          <input type="text" class="form-control" id="confident" placeholder="" required>
+          <div class="invalid-feedback">
+            Please tell us how confident you are around dogs.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="experience">Do you have experience with dogs? If yes, please expand.</label>
+          <input type="text" class="form-control" id="experience" placeholder="">
+          <div class="invalid-feedback">
+            Please us if you have experience with dogs.
+          </div>
+        </div>
+          
+        <div class="mb-3">
+            <label for="amount">Agree to terms and conditions</label>
+            <div class="input-group">
+            <div class="input-group-text">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+            </div>
+          </div>
+
+      
+        <hr class="mb-4">
        
-      </div><!-- /.container -->
+
+        <a class="btn btn-secondary btn-lg btn-block" href="report-help.html" role="button">Submit Questionnaire</a>
+      </form>
+        
+        <hr class="mb-4">
+        
+        </div>
 
       <!-- FOOTER -->
       <footer class="container">
-         <img src="Images/logo-20x20.jpg">
+        <img src="Images/logo-20x20.jpg">
         <p class="float-right"><a href="#">Back to top</a></p>
         <p> <a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="adopt.html">Adopt</a> &middot; <a href="donate.html">Donate</a> &middot; <a href="volunteer.html">Volunteer</a> &middot; <a href="report.html">Report</a> &middot; <a href="review.html">Review</a></p>
       </footer>
-    </main>
+    
+      </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
