@@ -1,6 +1,7 @@
 body {
   padding-top: 5rem;
   font-family: 'Overpass', sans-serif;
+    background-color: #f2f2f2;
 }
 
 p{
@@ -27,8 +28,8 @@ p{
 .col-md-4 {
     font-size: 1rem;
     margin-bottom: 15px;
-    background-color: #f2f2f2;
-    border-right: white 10px solid;
+    background-color: white;
+    border-right: #f2f2f2 10px solid;
     padding:20px;
     margin-bottom:50px;
     text-align: center;
@@ -49,7 +50,7 @@ p{
 .card {
     border: 1px #999 solid;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 img {
@@ -122,4 +123,43 @@ h5 {
 
 .btn-outline-light {
     background-color: #ff6666;
+}
+
+/* == iPhone 4 == */
+@media only screen 
+    and (device-width : 320px) 
+    and (device-height : 480px) 
+	and (-webkit-device-pixel-ratio : 2) {
+        .carousel {
+            display:none;
+}
+
+/* == iPhone 11 == */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+	.carousel {
+            display:none;
+        }
+}
+
+/* == Google Pixel phone 2 XL == */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px) 
+  and (-webkit-device-pixel-ratio: 3.5)
+   {
+	.carousel {
+            display:none;
+        }
+}
+
+/* == Microsoft Windows phone == */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+	.carousel {
+            display:none;
+        }
 }
