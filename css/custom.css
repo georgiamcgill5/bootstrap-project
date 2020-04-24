@@ -1,14 +1,17 @@
+/* == General == */
+
 body {
   padding-top: 5rem;
   font-family: 'Overpass', sans-serif;
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    color: #4d3319;
+    color: #333333;
+    font-weight: 400;
 }
 .starter-template {
   padding: 3rem 1.5rem;
@@ -20,6 +23,56 @@ p{
     font-weight: 300;
     font-size: 1rem;
 }
+
+.lead-narrow {
+    max-width: 40rem;
+}
+
+.lead-wide {
+    max-width: 60rem;
+}
+
+img {
+    margin: 15px;
+}
+
+*/
+.container {
+  max-width: 960px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+caption {
+    width: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+.float {
+    float: right;
+}
+
+label {
+    margin-bottom: -25px;
+}
+
+.border-bottom {
+    border-bottom: solid 1px black;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.image-not-carousel {
+    display: none;
+}
+
+/* == Cards == */
 
 .col-lg-4 {
     font-size: 12px;
@@ -39,69 +92,32 @@ p{
     border-right: 0;
 }
 
-.lead-narrow {
-    max-width: 40rem;
-}
-
-.lead-wide {
-    max-width: 60rem;
-}
-
 .card {
     border: 1px #999 solid;
     border-radius: 5px;
     background-color: white;
 }
 
-img {
-    margin: 15px;
-}
-
 .centered-card {
     text-align: center;
-}
-
-*/
-.container {
-  max-width: 960px;
-}
-
-.pricing-header {
-  max-width: 700px;
 }
 
 .card-deck .card {
   min-width: 220px;
 }
 
-@media screen and (max-width: 576px) {
-   .card {
-/*   background-color: tomato;*/
-   max-width: 400px;
-   margin: 0 auto;
-        }
-}
-
-ul {
-    list-style-type: none;
-}
-
-caption {
-    width: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-}
+/* == Headers == */
 
 h1, h2 {
-  color: rgba(255, 0, 0, 0.5);
+  color: rgba(254, 80, 0);
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
 h3 {
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(254, 80, 0);
     text-align: center;
 }
 
@@ -109,20 +125,32 @@ h5 {
     font-style:italic;
 }
 
-.float {
-    float: right;
+h1, h2, h3 {
+   font-family: 'Overpass', sans-serif;
+    font-weight: 800; 
 }
+
+/* == Buttons == */
 
 .center-align-buttons {
     text-align: center;
 }
 
 .btn {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(254, 80, 0);
 }
 
 .btn-outline-light {
-    background-color: #ff6666;
+    background-color: rgba(254, 80, 0);
+}
+
+/* == Media Queries == */
+
+@media screen and (max-width: 576px) {
+   .card {
+   max-width: 400px;
+   margin: 0 auto;
+        }
 }
 
 /* == iPhone 4 == */
@@ -131,7 +159,17 @@ h5 {
     and (device-height : 480px) 
 	and (-webkit-device-pixel-ratio : 2) {
         .carousel {
-            display:none;
+            display:none; 
+        }
+            
+        .card {
+            max-width: 280px;
+        }
+        
+        .image-not-carousel {
+        display: block;
+        margin-bottom:20px;
+        }
 }
 
 /* == iPhone 11 == */
@@ -141,6 +179,15 @@ h5 {
     and (-webkit-device-pixel-ratio : 2) { 
 	.carousel {
             display:none;
+        }
+        
+    .card {
+            max-width: 350px;
+        }
+        
+    .image-not-carousel {
+        display: block;
+        margin-bottom:20px;
         }
 }
 
@@ -153,6 +200,16 @@ h5 {
 	.carousel {
             display:none;
         }
+       
+    .card {
+            max-width: 350px;
+        }
+       
+    .image-not-carousel {
+        display: block;
+        margin-bottom:20px;
+        }
+    
 }
 
 /* == Microsoft Windows phone == */
@@ -161,5 +218,10 @@ h5 {
   and (device-height: 800px) {
 	.carousel {
             display:none;
+        }
+      
+    .image-not-carousel {
+        display: block;
+        margin-bottom:20px;
         }
 }
